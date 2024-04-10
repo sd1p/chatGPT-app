@@ -1,0 +1,12 @@
+Redux- //:TODO
+
+1 Chats state 
+all Chats
+active Chats
+append on query
+
+2 Chat Box
+fectch all messages from current chat
+append query and response
+
+// database + redux
