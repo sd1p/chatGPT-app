@@ -11,3 +11,6 @@ To get started with this project project, follow these steps:
 5. Generate prisma client using `npx prisma generate`
 6. Start the development server by running `npm run dev`.
 7. Open your browser and navigate to `http://localhost:3000` to see the application.
+
+## Todo
+Adding Unit tests
