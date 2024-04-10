@@ -48,7 +48,7 @@ const Header = () => {
           <SheetHeader>
             <SheetTitle>
               <span
-                className={`flex justify-between cursor-pointer ${logoFont.className} hover:bg-slate-800 rounded-md p-2`}
+                className={`flex justify-between cursor-pointer ${logoFont.className} hover:bg-slate-900 rounded-md p-2`}
               >
                 <span className="flex flex-row gap-1 my-2">
                   <MessageCirclePlus /> New Chat
@@ -64,7 +64,7 @@ const Header = () => {
               {chats.map((chat) => (
                 <li key={chat.id}>
                   <a
-                    className="block rounded-lg bg-black text-white px-4 py-2 text-sm font-medium hover:bg-gray-700 hover:text-text-100"
+                    className="block rounded-lg bg-black text-white px-4 py-2 text-sm font-medium hover:bg-slate-900"
                     href="#"
                   >
                     {chat.title}

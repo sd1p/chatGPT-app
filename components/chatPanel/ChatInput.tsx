@@ -29,7 +29,7 @@ const ChatInput: React.FC<ChatInputProps> = ({
     <>
       <div className="sticky bg-transparent bottom-2 z-100">
         <form
-          className="flex flex-row items-center justify-between px-3 py-2 mx-12 border-2 rounded-2xl border-gray-600 bg-balck text-slate-black xl:mx-18 2xl:mx-48"
+          className="flex flex-row items-center justify-between px-3 py-2  border-2 rounded-2xl border-gray-600 bg-balck mx-2 sm:mx-16"
           onSubmit={handleSubmit}
         >
           <input

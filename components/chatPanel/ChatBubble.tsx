@@ -6,8 +6,8 @@ interface ChatBubbleProps {
 
 const ChatBubble: React.FC<ChatBubbleProps> = ({ message }) => {
   return (
-    <div className="flex flex-row items-start justify-start gap-4 mx-12">
-      <div className="flex items-center justify-center mt-4 w-10 h-10rounded-full">
+    <div className="flex flex-row items-start justify-start gap-4  sm:mx-12">
+      <div className="flex-none items-center justify-center mt-4 w-10 h-10 rounded-full">
         {message.role === "assistant" ? (
           <Image
             alt=""
@@ -31,7 +31,7 @@ const ChatBubble: React.FC<ChatBubbleProps> = ({ message }) => {
           <h1 className="font-bold">
             {message.role === "user" ? "You" : "ChatBot"}
           </h1>
-          <p className="text-white break-words max-w-[60vh]">
+          <p className="text-white break-words max-w-[80vh]">
             {message.content}
           </p>
         </div>

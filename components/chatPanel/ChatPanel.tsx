@@ -21,16 +21,17 @@ const ChatPanel = () => {
 
   const dispatch = useDispatch<AppDispatch>();
   const storedMessages = useSelector(selectAllMessages);
+  const lastMessageContent = messages[messages.length - 1]?.content;
 
   useEffect(() => {
     dispatch(fetchMessages("661593a03d5c4c4c316a1517")).then(() =>
       scrollToBottom()
     );
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     scrollToBottom();
-  }, [messages[messages.length - 1]?.content]);
+  }, [lastMessageContent]);
 
   return (
     <>
